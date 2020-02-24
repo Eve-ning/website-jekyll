@@ -2,6 +2,7 @@
  * Site header
  */
 .site-header {
+  
   border-top: 5px solid $grey-color-dark;
   border-bottom: 10px solid $grey-color-light;
   min-height: $spacing-unit * 1.865;
@@ -191,6 +192,8 @@
 .page-content {
   padding: $spacing-unit 0;
   flex: 1;
+  background-image: url('/assets/bg.jpg');
+  background-attachment: fixed;
 }
 
 .page-heading {
@@ -271,4 +274,18 @@
       @include relative-font-size(1.125);
     }
   }
+} 
+
+
+.loader-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #242f3f;
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
+
