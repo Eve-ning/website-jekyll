@@ -125,7 +125,7 @@ Consider a nested loop
 {% highlight python %}
 def function(int n){
     for (int i = 0; i < n; i++){
-        for (int j = 1; j <= i; i++){
+        for (int j = 1; j <= i; j++){
             print("hello")
         } 
     } 
@@ -165,7 +165,7 @@ Consider something similar
 {% highlight python %}
 def function(int n){
     for (int i = 1; i <= n; i++){
-        for (int j = 1; j <= i; i++){
+        for (int j = 1; j <= i; j++){
             print("hello")
         } 
     } 
@@ -189,8 +189,8 @@ Consider this
 {% highlight python %}
 def function(int n){
     for (int i = 1; i <= n; i++){
-        for (int j = 1; j <= i; i++){
-            for (int k = 1; k <= j; i++){
+        for (int j = 1; j <= i; j++){
+            for (int k = 1; k <= j; k++){
                 print("hello")
             } 
         } 
