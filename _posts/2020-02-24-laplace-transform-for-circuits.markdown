@@ -132,25 +132,40 @@ $$V(s) = \frac{v}{s}$$
 
 ## Inductor
 
-$$v(t) = L*\frac{di(t)}{dt}$$
+$$
+\begin{align}
+v(t) &= L*\frac{di(t)}{dt}\\
 
-$$\mathcal{L}\{v(t)\} = \mathcal{L}\bigg\{L*\frac{di(t)}{dt}\bigg\}$$
+\mathcal{L}\{v(t)\}
+     &= \mathcal{L}\bigg\{L*\frac{di(t)}{dt}\bigg\} \\
 
-$$V(s) = L*\mathcal{L}\bigg\{\frac{di(t)}{dt}\bigg\} \stackrel{(1)}{=} L *\left[s*I(s)-i(0^-)\right]$$
+V(s) &= L*\mathcal{L}\bigg\{\frac{di(t)}{dt}\bigg\} \\
+     &\stackrel{(1)}{=} L *\left[s*I(s)-i(0^-)\right] \\
 
-$$V(s) = LsI(s)-Li(0^-)$$
+V(s) &= LsI(s)-Li(0^-)
+
+\end{align}
+$$
 
 ## Capacitor
 
-$$i(t) = C*\frac{dv(t)}{dt}$$
+$$
+\begin{align}
+i(t) &= C*\frac{dv(t)}{dt} \\
 
-$$\mathcal{L}\{i(t)\} = \mathcal{L}\bigg\{C*\frac{dv(t)}{dt}\bigg\}$$
+\mathcal{L}\{i(t)\}
+     &= \mathcal{L}\bigg\{C*\frac{dv(t)}{dt}\bigg\} \\
 
-$$I(s) = C*\mathcal{L}\bigg\{\frac{dv(t)}{dt}\bigg\} \stackrel{(1)}{=} C *\left[s*V(s)-v(0^-)\right]$$
+I(s) &= C*\mathcal{L}\bigg\{\frac{dv(t)}{dt}\bigg\} \\
+     &\stackrel{(1)}{=} C *\left[s*V(s)-v(0^-)\right] \\
 
-$$I(s) = CsV(s)-Cv(0^-)$$
+I(s) &= CsV(s)-Cv(0^-) \\
 
-$$V(s) = \frac{I(s)+Cv(0^-)}{Cs} = \frac{I(s)}{Cs} + \frac{v(0^-)}{s}$$
+V(s) &= \frac{I(s)+Cv(0^-)}{Cs} \\
+     &= \frac{I(s)}{Cs} + \frac{v(0^-)}{s}
+
+\end{align}
+$$
 
 **Laplace of a Derivative (1)**
 

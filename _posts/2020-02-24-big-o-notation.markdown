@@ -202,20 +202,25 @@ $$\sum_{i=1}^{n}\sum_{j=1}^{i}\sum_{k=1}^{j}1 = {?}$$
 
 We break it down and calculate them separately!
 
-$$\sum_{i=1}^{n}\sum_{j=1}^{i}\sum_{k=1}^{j}1$$
+$$ 
+\begin{align}
 
-$$=\sum_{i=1}^{n}\sum_{j=1}^{i}j$$
+\sum_{i=1}^{n}\sum_{j=1}^{i}\sum_{k=1}^{j}1
+&=\sum_{i=1}^{n}\sum_{j=1}^{i}j \\
 
-$$\stackrel{(1)}{=}\sum_{i=1}^{n}\frac{(i)(i+1)}{2}$$
+&\stackrel{(1)}{=}\sum_{i=1}^{n}\frac{(i)(i+1)}{2} \\
 
-$$=\sum_{i=1}^{n}\left(\frac{i^2}{2} + \frac{i}{2}\right) = 
+&=\sum_{i=1}^{n}\left(\frac{i^2}{2} + \frac{i}{2}\right) = 
    \frac{1}{2}\sum_{i=1}^{n}i^2 + \frac{1}{2}\sum_{i=1}^{n}i
-   \leq \sum_{i=1}^{n}i^2$$
+   \leq \sum_{i=1}^{n}i^2 \\
 
-$$\stackrel{(2)}{=}\frac{(n)(n+1)(2n+1)}{6}$$
+&\stackrel{(2)}{=}\frac{(n)(n+1)(2n+1)}{6} \\
 
-$$=\frac{2n^3}{6} + \frac{2n^2}{6} + \frac{n^2}{6} + \frac{n}{6}
-\leq n^3$$
+& =\frac{2n^3}{6} + \frac{2n^2}{6} + \frac{n^2}{6} + \frac{n}{6}
+\leq n^3 
+
+\end{align}
+$$
 
 ### $O(lg(n))$
 
