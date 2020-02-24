@@ -1,2 +1,3 @@
 # Eve-ning.github.io
- web
+Website for stuff I find interesting.
+Also about me.
