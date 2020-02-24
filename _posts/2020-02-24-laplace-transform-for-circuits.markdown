@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "Laplace Transform for Circuits"
-date:   2020-02-24 00:00:00 +0800
-categories: jekyll update
+date:   2020-02-24 08:00:00 +0800
+categories: digital electronics laplace
 ---
 
 # Prerequisites
