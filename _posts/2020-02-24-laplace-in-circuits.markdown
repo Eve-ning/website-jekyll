@@ -127,13 +127,7 @@ $$\mathcal{L}\{v(t)\} = \mathcal{L}\{v\}$$
 
 $$V(s) = \frac{v}{s}$$
 
-## Current Source
-
-$$i(t) = i$$
-
-$$\mathcal{L}\{i(t)\} = \mathcal{L}\{i\}$$
-
-$$I(s) = \frac{i}{s}$$
+*Transforming a Current Source to a Voltage Source would make analysis easier*
 
 ## Inductor
 
