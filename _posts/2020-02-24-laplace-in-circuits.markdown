@@ -17,11 +17,11 @@ categories: jekyll update
 
 Note that this is grossly simplified as a cheatsheet.
 
-We denote a **Laplace Transform of f(t)** as $\mathcal{L}\{f(t)\}$
+We denote a **Laplace Transform of f(t)** as
 
 $$\mathcal{L}\{f(t)\} = F(s)$$
 
-$$\mathcal{L}^{-1}\{F(s)\} = F(t)$$
+$$\mathcal{L}^{-1}\{F(s)\} = f(t)$$
 
 | Type                | t-domain  | s-domain |
 | ------------------- | --------- | -------- |
@@ -235,7 +235,7 @@ At least you understand why now
 
 $$\mathcal{L}\{f(t)\} = F(s)$$
 
-$$\mathcal{L}^{-1}\{F(s)\} = F(t)$$
+$$\mathcal{L}^{-1}\{F(s)\} = f(t)$$
 
 | Type                | t-domain  | s-domain |
 | ------------------- | --------- | -------- |
