@@ -75,9 +75,10 @@ In other words, we want to transform something in terms of **time** to **frequen
 |          ←          |
 +--[800]--[+ 30/s -]--+
 ```
-*Note that the currents are also Laplace Transformed*
-
-*Detailed explanation of transformation later* 
+*Notes*:
+- Currents are also **Laplace Transformed**
+- Assumption that Capacitor and Inductor aren't charged before $0^-$
+- Detailed explanation of transformation later
 
 $$Loop 1\rightarrow-25s*I_1(s)-\frac{I_1(s)-I_2(s)}{6.25s}=0$$
 
@@ -165,6 +166,9 @@ $$\mathcal{L}\{f^{\prime}(t)\} = s\mathcal{L}\{f(t)\}-f(0^-)$$
 
 Notice that we expressed everything in **Voltage** (excluding current source), this is so that we can insert them in easily.
 
+
+* $V_0, v_0$ are grounds
+
 ### Resistor
 
 $$v(t) = r * i(t)$$
@@ -178,7 +182,6 @@ $$V(s) = r * I(s)$$
     <---      =      <--   
     i(t)             I(t)
 ```
-* $V_0, v_0$ are grounds
 
 Note that if you measure $v_a$ and $V_a$, they tally with the transformation.
 
@@ -212,6 +215,10 @@ $$V(s) = LsI(s)-Li(0^-)$$
     i(t)                    I(t)
 ```
 
+Notes:
+- The direction of the additional Voltage Source is important.
+- If the Inductor starts with 0 current, then we can omit it.
+
 ### Capacitor
 
 $$i(t) = C*\frac{dv(t)}{dt}$$
@@ -226,6 +233,10 @@ $$V(s) = \frac{I(s)+Cv(0^-)}{Cs} = \frac{I(s)}{Cs} + \frac{v(0^-)}{s}$$
     <---             <------------------
     i(t)                     I(t)
 ```
+
+Notes:
+- The direction of the additional Voltage Source is important.
+- If the Capacitor starts with 0 voltage, then we can omit it.
 
 # Summary
 
