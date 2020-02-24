@@ -136,9 +136,9 @@ $$\sum_{i=0}^{n-1}\sum_{j=1}^{i}1 = {?}$$
 
 Now this feels like some mental gymnastics. Best to split it into smaller problems.
 
-$$\because\sum_{j=0}^{i}1 = i$$
+$$\because\sum_{j=1}^{i}1 = i$$
 
-$$\therefore\sum_{i=0}^{n-1}\sum_{j=0}^{i}1 = \sum_{i=0}^{n-1}i$$
+$$\therefore\sum_{i=0}^{n-1}\sum_{j=1}^{i}1 = \sum_{i=0}^{n-1}i$$
 
 $$\sum_{i=0}^{n-1}i = 0 + 1 + 2 + ... + (n-2) + (n-1)$$
 
