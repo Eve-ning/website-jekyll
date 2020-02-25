@@ -98,7 +98,7 @@ def function(int n){
 
 We can write it as if we are counting how many `print("hello")` are executed.
 
-$$\sum_{i=0}^{n-1}1 = n$$
+$$\sum_{i=0}^{n-1}1 = n = O(n)$$
 
 It's a simple sum to calculate, we are just adding 1s together n times.
 
@@ -114,7 +114,7 @@ def function(int n){
 
 Here, we print 3 times each loop
 
-$$\sum_{i=0}^{n-1}3 = 3n$$
+$$\sum_{i=0}^{n-1}3 = 3n = O(n)$$
 
 Both of these fall into the category of $O(n)$.
 
@@ -158,7 +158,7 @@ Great, we managed to make it in terms of $n$, what's next?
 
 We find what's the nearest higher value of the sum. That is, we want to only have 1 term that has $n$.
 
-$$\frac{n^2}{2} - \frac{n}{2} \leq \frac{n^2}{2}$$
+$$\frac{n^2}{2} - \frac{n}{2} \leq \frac{n^2}{2} = O(n^2)$$
 
 Consider something similar
 
@@ -180,7 +180,7 @@ $$\sum_{i=1}^{n}i = \frac{(n)(n+1)}{2} = \frac{n^2}{2} + \frac{n}{2}$$
 
 Same problem, but instead, don't eliminate $n/2$ !
 
-$$\frac{n^2}{2} + \frac{n}{2} \leq \frac{n^2}{2} + \frac{n^2}{2} = n^2$$
+$$\frac{n^2}{2} + \frac{n}{2} \leq \frac{n^2}{2} + \frac{n^2}{2} = n^2 = O(n^2)$$
 
 ### $O(n^3)$
 
@@ -217,7 +217,7 @@ $$
 &\stackrel{(2)}{=}\frac{(n)(n+1)(2n+1)}{6} \\
 
 & =\frac{2n^3}{6} + \frac{2n^2}{6} + \frac{n^2}{6} + \frac{n}{6}
-\leq n^3 
+\leq n^3 = O(n^3)
 
 \end{align}
 $$
@@ -247,7 +247,7 @@ This is odd, but by reading the code, you can kind of see a pattern.
 
 $$2^{times} = n$$
 
-$$times = \log_2(n)$$
+$$times = \log_2(n) \rightarrow O(\log_2(n))$$
 
 Note that for $3, 5, 6, 7, ...$ those numbers that aren't a perfect power of 2 produce a fraction of $times$ when using the formula.
 
@@ -258,7 +258,6 @@ This is fine as long as $log_2(n)$ is the upper bound of $times$
 ### Constant $k$
 
 Yes, we just classify $kn^a$ as $O(n^a)$ if 
-- k is an integer
 - k > 0
 - n is large
 
