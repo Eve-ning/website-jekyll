@@ -2,7 +2,7 @@
 layout: post
 title:  "Big-O Notation"
 date:   2020-02-24 16:00:00 +0800
-categories: data structures and algorithms
+categories: data_structures
 ---
 
 # Prerequisites
