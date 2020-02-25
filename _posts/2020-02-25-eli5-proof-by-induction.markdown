@@ -33,7 +33,7 @@ $$
 
 Prove that label $Z$ is on the string.
 
-- *$Z$ is positive*
+- *$Z$ is a positive integer*
 
 ## Prove the 1st Case
 
