@@ -7,7 +7,7 @@ categories: data_structures
 
 # Prerequisites
 
-- Pseudocode/Python
+- Pseudocode/C
 - Log Operations
 - Summation Operations
 - Comparison Operations
@@ -50,10 +50,10 @@ Though $h(n)$ seems to be the best for smaller inputs, it performs horribly for 
 
 ---
 
-Consider the following code in `python`
+Consider the following codeblocks in `"C Lang"` Syntax
 
-{% highlight python %}
-def function(int n){
+{% highlight c %}
+function(int n){
     for (int i = 0; i < n; i++){
         print("hello")
     } 
@@ -64,8 +64,8 @@ The number of times it will print = n
 
 But when it becomes complicated
 
-{% highlight python %}
-def function(int n){
+{% highlight c %}
+function(int n){
     for (int i = 0; i < n; i++){
         for (int j = 0; j < i; j++){
             print("hello")
@@ -88,8 +88,8 @@ I find that the best way to treat these problems is by translating to math.
 
 Consider the previous simple for loop
 
-{% highlight python %}
-def function(int n){
+{% highlight c %}
+function(int n){
     for (int i = 0; i < n; i++){
         print("hello")
     } 
@@ -102,8 +102,8 @@ $$\sum_{i=0}^{n-1}1 = n = O(n)$$
 
 It's a simple sum to calculate, we are just adding 1s together n times.
 
-{% highlight python %}
-def function(int n){
+{% highlight c %}
+function(int n){
     for (int i = 0; i < n; i++){
         print("hello")
         print("hello")
@@ -122,8 +122,8 @@ Both of these fall into the category of $O(n)$.
 
 Consider a nested loop
 
-{% highlight python %}
-def function(int n){
+{% highlight c %}
+function(int n){
     for (int i = 0; i < n; i++){
         for (int j = 1; j <= i; j++){
             print("hello")
@@ -162,8 +162,8 @@ $$\frac{n^2}{2} - \frac{n}{2} \leq \frac{n^2}{2} = O(n^2)$$
 
 Consider something similar
 
-{% highlight python %}
-def function(int n){
+{% highlight c %}
+function(int n){
     for (int i = 1; i <= n; i++){
         for (int j = 1; j <= i; j++){
             print("hello")
@@ -186,8 +186,8 @@ $$\frac{n^2}{2} + \frac{n}{2} \leq \frac{n^2}{2} + \frac{n^2}{2} = n^2 = O(n^2)$
 
 Consider this
 
-{% highlight python %}
-def function(int n){
+{% highlight c %}
+function(int n){
     for (int i = 1; i <= n; i++){
         for (int j = 1; j <= i; j++){
             for (int k = 1; k <= j; k++){
@@ -224,8 +224,8 @@ $$
 
 ### $O(lg(n))$
 
-{% highlight python %}
-def function(int n){
+{% highlight c %}
+function(int n){
     while(n > 1) {
         print("hello")
         n /= 2;
@@ -309,8 +309,8 @@ Order them in order of growth
 
 Translate this
 
-{% highlight python %}
-def function(int n){
+{% highlight c %}
+function(int n){
     for (int i = 0; i < n; i++){
         for (int j = 0; j < i; j++){
             print("hello")
