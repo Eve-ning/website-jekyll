@@ -130,7 +130,7 @@ After some time, you'd get a lot of feature requests on $thing\,A\,B\,C\,D...$
 
 Adding $things$ is good, but too much $things$ is bad. 
 
-Sounds contradictory but sometimes it's better to not have all the $things$s
+Sounds contradictory but sometimes it's better to not have all the $things$
 
 Here are some reasons:
 
