@@ -85,8 +85,6 @@ $$\sum_{n=0}^{\infty}1/(p^n)$$
 
 $\lim\limits_{n\rightarrow\infty}\lvert a_{n+1}/a_n\rvert$ = Test Result
 
----
-
 |Result||
 |-|-|
 |$< 1$|Absolute Converge|
