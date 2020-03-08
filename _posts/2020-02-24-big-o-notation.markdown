@@ -146,7 +146,7 @@ If you forgetten how to sum these series:
 
 $$1 + 2 + ... + (n-1) + n = \frac{(n)(n+1)}{2} \tag{1}$$
 
-$$2^0 + 2^1 + ... + 2^{(n-1)} + 2^n = \frac{(n)(n+1)(2n+1)}{6} \tag{2}$$
+$$1^2 + 2^2 + ... + (n-1)^2 + n^2 = \frac{(n)(n+1)(2n+1)}{6} \tag{2}$$
 
 Using $(1)$
 
