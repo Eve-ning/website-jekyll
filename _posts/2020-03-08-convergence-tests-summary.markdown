@@ -20,7 +20,7 @@ Regardless of it's value, if it's not 0, it'll tend to $+\infty$ or $-\infty$
 
 Series **Converges** if:
 - $\lim\limits_{n\rightarrow\infty}s_n = 0$
-- $|a_{n+1}| \leq |a_{n}|$
+- $\lvert a_{n+1}\rvert \leq \lvert a_{n}\rvert$
   - It can be $\leq$ because
     $\lim\limits_{n\rightarrow\infty}s_n = 0$ guarantees it'll end up at $0$
 
