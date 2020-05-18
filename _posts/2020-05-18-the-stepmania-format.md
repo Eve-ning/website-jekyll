@@ -23,6 +23,8 @@ It uses snapping to determine where notes are. Take for example this:
 
 Simple enough, the beat would go like `X__X` in a measure.
 
+---
+
 ```
 // This is a measure
 0001
@@ -35,6 +37,8 @@ Simple enough, the beat would go like `X__X` in a measure.
 
 This goes `X_XX_X`
 
+---
+
 ```
 0000
 0001
@@ -46,6 +50,8 @@ This goes `X_XX_X`
 It can go up to 192 divisions per measure, so each beat has 48 divisions.
 
 Simple enough right? Here comes the sledgehammer
+
+---
 
 ## Measure Resetting
 
@@ -73,6 +79,8 @@ Measure |___.___.___.___|___|_._._._|_.
 
 *side note: if you're thinking to adjust the metronome, good luck finding out how to even do it*
 
+---
+
 Well, what happens is that the measure actually continues so you get
 
 ```
@@ -84,6 +92,8 @@ Measure |___.___.___.___|___._._._|_._.
         1               2   ^     3  
                           [2.25]
 ```
+
+---
 
 To fix this, you add another BPM point so that the measure is reset correctly
 
@@ -99,6 +109,8 @@ Measure |___.___.___.___|...|_._._._|_.
 
 Why
 
+---
+
 ## Stops
 
 This is another mystery, how do stops even work?
@@ -113,6 +125,8 @@ Rhythms X   X   X   X   X       X       X
 Measure |___.___.___.___|_._._._|_._._._|
 ```
 
+---
+
 Let's say for some reason notes after 300 BPM is slightly delayed by let's say 1/4 of a beat.
 
 ```
@@ -122,6 +136,8 @@ Rhythms X   X   X   X   |X      |X      |X
 300 BPM |               1 2 3 4 1 2 3 4 1
 Measure |___.___.___.___|_._._._|_._._._|
 ```
+
+---
 
 Well, now everything is misaligned.
 
@@ -139,6 +155,8 @@ Stops                   ^
 I hope you noticed I said **seconds length**. The format is a jumble of seconds, beats and measures.
 
 Why
+
+---
 
 ## Format Jumbling
 
@@ -196,6 +214,8 @@ Here's a sample:
 There's a lot more details, [found here](https://github.com/stepmania/stepmania/wiki/sm) on the official SM wiki.
 
 Why
+
+---
 
 ## Converting osu! to Stepmania
 
